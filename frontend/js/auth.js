@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/auth";
+const API = "https://your-app.onrender.com:5000/api/auth";
 
 // REGISTER
 async function register(){

@@ -1,4 +1,4 @@
-const API = "http://localhost:5000/api/matcha";
+const API = "https://your-app.onrender.com/api/matcha";
 
 // 🔒 Protect page
 const token = localStorage.getItem("token");
