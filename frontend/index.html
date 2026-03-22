@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Matcha Journal</title>
+
+<link rel="stylesheet" href="css/styles.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🍵 Matcha Journal</h1>
+
+<div class="card">
+
+<h2>Add Matcha</h2>
+
+<input id="name" placeholder="Matcha Name">
+<input id="brand" placeholder="Brand">
+
+<div class="stars" id="starContainer">
+<span onclick="setRating(1)">⭐</span>
+<span onclick="setRating(2)">⭐</span>
+<span onclick="setRating(3)">⭐</span>
+<span onclick="setRating(4)">⭐</span>
+<span onclick="setRating(5)">⭐</span>
+</div>
+
+<input id="notes" placeholder="Notes">
+
+<input type="file" id="image" onchange="previewImage()">
+<img id="preview" />
+
+<button onclick="addMatcha()">Add Matcha</button>
+
+</div>
+
+<input id="search" placeholder="🔍 Search matcha..." onkeyup="searchMatcha()">
+
+<div id="matchaList" class="grid"></div>
+
+</div>
+
+<script src="js/matcha.js"></script>
+
+</body>
+</html>
